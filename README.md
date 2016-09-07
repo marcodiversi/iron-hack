@@ -1,6 +1,6 @@
 # iron-hack
-#IRON HACK
-#BOOT CAMP
-#RUBY
+# Iron Hack
+# Boot Camp
+# Ruby
 
 IRON HACK BOOTCAMP EXERCISES AND PREP WORK! 
