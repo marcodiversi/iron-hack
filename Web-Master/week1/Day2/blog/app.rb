@@ -1,4 +1,4 @@
-require 'colorize'
+require 'colorize'   #gem install colorize
 
 class Blog
     def initialize
@@ -11,13 +11,12 @@ class Blog
     
 def publish_page(page_number)
         start_post = 0
-        end_post = 6
+        end_post = 7
         @posts.sort! {|post1, post2| post2.date <=> post1.date}
-        (start_post..end_post).each do |i|
+       (start_post..end_post).each do |i|       # (start_post..end_post)
             @posts[i].post_printer
 end
 end
-
     def number_of_pages
         (@posts.length / 3.0).round(0)
     end
@@ -68,6 +67,7 @@ text6 = "This is text number 6".colorize(:blue)
 text7 = "This is text number 7".colorize(:white)
 
 text8 = "This is text number 8".colorize(:white)
+
 
 post1 = Post.new("Title 1", "2016-03-22", text1)
 
