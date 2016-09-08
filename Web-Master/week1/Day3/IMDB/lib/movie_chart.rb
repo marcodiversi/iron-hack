@@ -37,6 +37,5 @@ class MoviesChart
 			puts "#{index+1}.#{movie.title}"
 		end
 	end
-
-
+#working not
 end
