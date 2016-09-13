@@ -24,6 +24,7 @@ car_dealer = {
 my_car = CarDealer.new(car_dealer)
 my_car.print_cars("Ferrari")
 
+#TODO
 # high_capacity_homes = homes.select do |hm|
 #   # Keep hm only if its capacity is 4 or greater
 #   hm.capacity >= 4
