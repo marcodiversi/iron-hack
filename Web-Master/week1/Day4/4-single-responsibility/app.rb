@@ -3,7 +3,7 @@ require_relative("lib/App.rb")
 require_relative("lib/Text.rb")
 
 application = App.new
-#why
+#why and why
 
 
 textprocessor = Text.new
