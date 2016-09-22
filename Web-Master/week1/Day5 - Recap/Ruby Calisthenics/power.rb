@@ -7,17 +7,16 @@
 
 require 'pry'
 
-def power(a,b)
-	result = a
-	(b-1).times do
-		result = result * a
+def power(base, exponent)
+	result = base
+	while exponent > 1 
+		result = result * base
+		exponent = exponent - 1 
 	end
 	puts result
 end
 
-puts ">> power(3,4)"
 power(3,4)
-
 
 
 
