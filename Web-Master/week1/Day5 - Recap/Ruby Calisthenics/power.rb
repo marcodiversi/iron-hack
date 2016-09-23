@@ -18,6 +18,12 @@ end
 
 power(3,4)
 
+# Write a method that gets a string and return a new string with the same letters in reverse order.
+
+# > reverse("You are not going anywhere")
+# => "erehwyna gniog ton era ouY"
+
+
 
 
 
