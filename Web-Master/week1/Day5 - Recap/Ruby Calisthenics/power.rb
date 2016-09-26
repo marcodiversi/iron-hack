@@ -1,3 +1,4 @@
+#exercise 1
 #Write a method power that takes in two integers (base and exponent) and returns the base 
 #raised to the power of exponent. Do not use Ruby’s ** operator for this!
 
@@ -25,10 +26,23 @@ power(3,4)
 # > reverse("You are not going anywhere")
 # => "erehwyna gniog ton era ouY"
 
+def reverse(string)
+	array = string.split("")
+	i = 0
+	array.each do |item|
+		array[item]
+	end
+	#puts array.join("")
+end
+
+
+puts reverse("You are not going anywhere")
 
 
 
 
+
+#exercise 1 
 # require 'pry'
 
 # def power(a,b)
@@ -42,7 +56,7 @@ power(3,4)
 # puts ">> power(3,4)"
 # power(3,4)
 
-
+#exercise 2
 # def reverse(string)
 # 	string.reverse!
 # 	puts string
@@ -50,6 +64,10 @@ power(3,4)
 
 # puts ">> reverse You are not going anywhere"
 # reverse("You are not going anywhere")
+
+
+
+#exercise 3
 
 
 # def factorial(number)
