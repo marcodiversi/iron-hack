@@ -5,19 +5,18 @@
 #> power(3,4)
 #=> 81 # (3*3*3*3)
 
+# require 'pry'
 
-require 'pry'
+# def power(base, exponent)
+# 	result = base
+# 	while exponent > 1 
+# 		result = result * base
+# 		exponent = exponent - 1 
+# 	end
+# 	puts result
+# end
 
-def power(base, exponent)
-	result = base
-	while exponent > 1 
-		result = result * base
-		exponent = exponent - 1 
-	end
-	puts result
-end
-
-power(3,4)
+# power(3,4)
 
 
 #exercise 2
@@ -26,48 +25,35 @@ power(3,4)
 # > reverse("You are not going anywhere")
 # => "erehwyna gniog ton era ouY"
 
-def reverse(string)
-	array = string.split("")
-	i = 0
-	array.each do |item|
-		array[item]
-	end
-	#puts array.join("")
-end
-
-
-puts reverse("You are not going anywhere")
-
-
-
-
-
-#exercise 1 
-# require 'pry'
-
-# def power(a,b)
-# 	result = a
-# 	(b-1).times do
-# 		result = result * a
-# 	end
-# 	puts result
-# end
-
-# puts ">> power(3,4)"
-# power(3,4)
-
-#exercise 2
 # def reverse(string)
-# 	string.reverse!
-# 	puts string
+# 	i = string.length
+# 	while i >= 0
+# 	print string[i]
+# 	i = i - 1
+# 	end
 # end
 
-# puts ">> reverse You are not going anywhere"
-# reverse("You are not going anywhere")
-
+# puts reverse("You are not going anywhere")
 
 
 #exercise 3
+# Write a method factorial that receives a number and returns the product of every number up to the 
+# current number multiplied together.
+
+# > factorial(5)
+# => 120  # from 1*2*3*4*5
+
+def factorial(f)
+	result = (f - 1)
+	while 
+	   result = result * (f - 1)
+	   f  =  f - 1
+	end
+	puts result
+end
+
+factorial(5)
+
 
 
 # def factorial(number)
