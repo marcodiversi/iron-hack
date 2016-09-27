@@ -1,9 +1,9 @@
-#exercise 1
-#Write a method power that takes in two integers (base and exponent) and returns the base 
-#raised to the power of exponent. Do not use Ruby’s ** operator for this!
+# # exercise 1
+# # Write a method power that takes in two integers (base and exponent) and returns the base 
+# # raised to the power of exponent. Do not use Ruby’s ** operator for this!
 
-#> power(3,4)
-#=> 81 # (3*3*3*3)
+# # > power(3,4)
+# # => 81 # (3*3*3*3)
 
 # require 'pry'
 
@@ -16,14 +16,15 @@
 # 	puts result
 # end
 
+#  puts "> power(3,4)"
 # power(3,4)
 
 
-#exercise 2
-# Write a method that gets a string and return a new string with the same letters in reverse order.
+# # exercise 2
+# # Write a method that gets a string and return a new string with the same letters in reverse order.
 
-# > reverse("You are not going anywhere")
-# => "erehwyna gniog ton era ouY"
+# # > reverse("You are not going anywhere")
+# # => "erehwyna gniog ton era ouY"
 
 # def reverse(string)
 # 	i = string.length
@@ -33,37 +34,50 @@
 # 	end
 # end
 
+#  puts "> reverse(You are not going anywhere)"
 # puts reverse("You are not going anywhere")
 
 
-#exercise 3
-# Write a method factorial that receives a number and returns the product of every number up to the 
-# current number multiplied together.
+# # exercise 3
+# # Write a method factorial that receives a number and returns the product of every number up to the 
+# # current number multiplied together.
 
-# > factorial(5)
-# => 120  # from 1*2*3*4*5
+# # > factorial(5)
+# # => 120  # from 1*2*3*4*5
 
-def factorial(f)
-	i = 1
-	result = 1
-	while i < f
-	   result = result * (i + 1)
-	   i  =  i + 1
-	end
-	puts result
-end
-
-factorial(9)
-
-
-
-# def factorial(number)
-# 	return 1 if (0..1).include?(number)
-# 	number * factorial(number - 1)
+# def factorial(f)
+# 	i = 1
+# 	result = 1
+# 	while i < f
+# 	   result = result * (i + 1)
+# 	   i  =  i + 1
+# 	end
+# 	puts result
 # end
 
-# puts ">> puts factorial(5)"
-# puts factorial(5)
+#  puts "> factorial(5)"
+# factorial(5)
+
+
+# exercise 4
+# Write a method that gets a number of minutes and returns a string converting those minutes in hours:minutes format.
+
+# > time_conversion(500)
+# => "8:20"
+
+def time_conversion(time)
+	hours = time / 60
+	minutes = time - (time)
+	puts hours.to_s + ":" + minutes.to_s
+end
+
+puts "> time_conversion(500)"
+time_conversion(500)
+
+
+
+
+
 
 
 # def time_conversion(number)
