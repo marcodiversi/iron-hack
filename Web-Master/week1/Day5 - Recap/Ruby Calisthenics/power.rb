@@ -44,15 +44,16 @@
 # => 120  # from 1*2*3*4*5
 
 def factorial(f)
-	result = (f - 1)
-	while 
-	   result = result * (f - 1)
-	   f  =  f - 1
+	i = 1
+	result = 1
+	while i < f
+	   result = result * (i + 1)
+	   i  =  i + 1
 	end
 	puts result
 end
 
-factorial(5)
+factorial(9)
 
 
 
