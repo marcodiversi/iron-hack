@@ -82,23 +82,23 @@
 # > count_vowels("hello")
 # => 2
 
-def count_vowels(string)
-  chars = string.chars
-  vowels = ["a", "e", "i", "o", "u"]
-  count = 0
-  chars.each do |char|
-    vowels.each do |vowel|
-      if char == vowel
-        count += 1
-        break
-      end
-    end
-  end
-puts count
-end
+# def count_vowels(string)
+#   chars = string.chars
+#   vowels = ["a", "e", "i", "o", "u"]
+#   count = 0
+#   chars.each do |char|
+#     vowels.each do |vowel|
+#       if char == vowel
+#         count += 1
+#         break
+#       end
+#     end
+#   end
+# puts count
+# end
 
-puts "> count_vowels(hello)"
-count_vowels("hello")
+# puts "> count_vowels(hello)"
+# count_vowels("hello")
 
 
 #exercise 6
@@ -109,25 +109,30 @@ count_vowels("hello")
 # uniques([1,5,”frog”, 2,1,3,”frog”])
 # => [1,5,”frog”,2,3]
 
-
-
-
 # def uniques(array)
-# 	result = []
-# 	array.each do |element|
-# 		unless result.include?(element)
-# 			result << element
-# 		end
-# 	end
-# 	puts result
+#     members = []
+#     array.each do |busted|
+#         unless members.include?(busted)
+#         members << busted
+#         end
+#     end
+#     print members
 # end
 
-# puts ">> uniques 1,5,frog,2,1,3,frog"
-# uniques([1,5,"frog",2,1,3,"frog"])
+# puts "> uniques (1,5,frog,2,1,3,frog)"
+# uniques([1,5,'frog', 2,1,3,'frog'])
 
+#exercise 7
 
-# def is_prime?(number)
-# 	if number == 0 || number == 1
+# Write a method that receives an integer (greater than one) and returns true if it is prime; otherwise return false.
+
+# > is_prime?(7)
+# => true
+# > is_prime?(14)
+# => false
+
+# def is_prime(number)
+#     	if number == 0 || number == 1
 # 		return false
 # 	end
 
@@ -143,10 +148,29 @@ count_vowels("hello")
 # 	return true
 # end
 
-# puts ">> is_prime?(7)"
-# puts is_prime?(7)
-# puts ">> is_prime?(14)"
-# puts is_prime?(14)
+
+# puts ("> is_prime(7)")
+# puts is_prime(7)
+# puts ("> is_prime(14)")
+# puts is_prime(14)
+
+
+#exercise palindrome
+# Write a method that gets a string and returns true if it is a palindrome. 
+# A palindrome is a string which reads the same backward or forward. Assume that there are no spaces; 
+# only lowercase letters will be given.
+
+# > palindrome?("radar")
+# => true
+# > palindrome?("bear")
+# => false
+
+
+
+
+
+
+
 
 
 # def palindrome?(word)
