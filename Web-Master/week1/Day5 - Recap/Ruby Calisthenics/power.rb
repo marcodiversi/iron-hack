@@ -65,38 +65,51 @@
 # > time_conversion(500)
 # => "8:20"
 
-def time_conversion(time)
-	hours = time / 60
-	minutes = time - (time)
-	puts hours.to_s + ":" + minutes.to_s
-end
-
-puts "> time_conversion(500)"
-time_conversion(500)
-
-
-
-
-
-
-
-# def time_conversion(number)
-# 	hours = number / 60
-# 	minutes = number - (hours * 60)
+# def time_conversion(time)
+# 	hours = time / 60
+# 	minutes = time - (hours * 60)
 # 	puts hours.to_s + ":" + minutes.to_s
 # end
 
-# puts ">> time_conversion(500)"
+# puts "> time_conversion(500)"
 # time_conversion(500)
 
 
-# def count_vowels(string)
-# 	number = string.scan(/[aeoui]/).count
-# 	puts number
-# end
+#exercise 5
+# Write a method that receives a string and returns the number of vowels in that string. You may assume that 
+# all the letters are lower cased. You can treat "y" as a consonant.
 
-# puts ">> count_vowels of hello"
-# count_vowels("hello")
+# > count_vowels("hello")
+# => 2
+
+def count_vowels(string)
+  chars = string.chars
+  vowels = ["a", "e", "i", "o", "u"]
+  count = 0
+  chars.each do |char|
+    vowels.each do |vowel|
+      if char == vowel
+        count += 1
+        break
+      end
+    end
+  end
+puts count
+end
+
+puts "> count_vowels(hello)"
+count_vowels("hello")
+
+
+#exercise 6
+
+# Write a method uniqueness that takes in an array of items and returns the array without any duplicates. 
+# Don’t use Ruby’s uniq method!
+
+# uniques([1,5,”frog”, 2,1,3,”frog”])
+# => [1,5,”frog”,2,3]
+
+
 
 
 # def uniques(array)
