@@ -212,6 +212,8 @@ puts " "
 # two_sum([2, -5, 10, 5, 4, -10, 0 ])
 # => [1,3]
 
+#to finish 
+
 def two_sum(array)
 	array.each do |num|
 		puts num
