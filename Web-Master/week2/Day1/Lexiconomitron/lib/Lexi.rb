@@ -45,12 +45,4 @@ class Lexiconomitron
 		final_arr
 	end
 
-
-
-
-
-
-
-
-
 end
