@@ -26,7 +26,7 @@ describe Lexiconomitron do
 
 
 	describe "#shazam" do
-		it "reverses wordds, prints only first and last, eats the t's" do 
+		it "reverses words, prints only first and last, eats the t's" do 
 		@lexi = Lexiconomitron.new
 		expect(@lexi.shazam(["This", "is", "a", "boring", "test"])).to eq(["sih", "se"])
 	end
