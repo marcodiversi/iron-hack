@@ -1,6 +1,7 @@
 require_relative("lib/lexi.rb")
 
 #confusing a lot a lot
+#cant fix it
 
 
 lexi = Lexiconomitron.new
